@@ -1,0 +1,207 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+.publish-article {
+  margin-left: 180px;
+  padding: 5px 30px;
+  display: none; }
+  .publish-article form {
+    width: 80%;
+    margin: 60px auto;
+    padding: 50px 50px;
+    background-color: #fff;
+    border-radius: .1em;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1); }
+    .publish-article form #title {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      outline: none;
+      font-weight: 300;
+      font-size: 16px;
+      padding: 5px 10px;
+      margin-bottom: 20px;
+      border: 3px solid #34495e;
+      background-color: #F8F8F8; }
+      .publish-article form #title::-webkit-input-placeholder {
+        color: #999; }
+      .publish-article form #title::-moz-placeholder {
+        color: #999; }
+      .publish-article form #title:-moz-placeholder {
+        color: #999; }
+      .publish-article form #title:-ms-input-placeholder {
+        color: #999; }
+    .publish-article form .select {
+      position: relative;
+      width: 20%;
+      background-color: #F8F8F8;
+      border: 3px solid #34495e;
+      padding: 5px 10px;
+      margin-top: 20px;
+      cursor: pointer;
+      color: #999; }
+      .publish-article form .select span {
+        font-size: 16px; }
+      .publish-article form .select ul {
+        position: absolute;
+        left: 110%;
+        top: 0;
+        z-index: 999;
+        display: none;
+        -webkit-transition: 0.3s linear;
+        -moz-transition: 0.3s linear;
+        transition: 0.3s linear; }
+        .publish-article form .select ul li {
+          float: left;
+          width: 100px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          background-color: #e8e8e8;
+          margin-bottom: 5px; }
+          .publish-article form .select ul li:hover {
+            color: #fff;
+            background-color: #34495e; }
+      .publish-article form .select .show {
+        display: block; }
+    .publish-article form #file {
+      display: none; }
+    .publish-article form #filename {
+      display: block;
+      width: 20%;
+      height: 50px;
+      border: 3px solid #34495e;
+      padding: 5px 10px;
+      margin-bottom: 20px;
+      text-decoration: none; }
+    .publish-article form textarea {
+      border: 3px solid #34495e; }
+    .publish-article form #publish-btn {
+      width: 150px;
+      height: 50px;
+      background-color: #34495e;
+      color: #fff;
+      outline: none;
+      border: 0;
+      border-bottom: 5px solid #2c3e50;
+      margin-top: 20px;
+      cursor: pointer;
+      font-size: 16px;
+      letter-spacing: 5px; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  font: 1em/1.5em "Arial", "Verdana";
+  background-color: #E9EEF1; }
+
+header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 180px;
+  background-color: #3E474E;
+  text-align: center;
+  color: #fff; }
+  header .portrait {
+    height: 180px;
+    background-color: #C05A75;
+    padding: 35px; }
+    header .portrait img {
+      border-radius: 100%;
+      border: .3em solid #fff; }
+  header .manage {
+    height: 3em; }
+  header .manage .item {
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    width: 100%;
+    height: 100%;
+    line-height: 3em; }
+  header .manage a:hover {
+    background-color: #333a40;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out; }
+
+main {
+  margin-left: 180px;
+  padding: 20px 30px 0 30px; }
+  main .pos {
+    height: 3em;
+    background-color: #fff;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+    border-radius: .1em;
+    padding-left: 2em; }
+    main .pos span {
+      color: #666;
+      line-height: 3em; }
+    main .pos .logout {
+      float: right; }
+      main .pos .logout i {
+        color: #666; }
+      main .pos .logout a {
+        color: #666;
+        line-height: 3em;
+        margin-right: 20px; }
+
+.message {
+  margin-left: 180px;
+  padding: 5px 30px; }
+  .message article {
+    background-color: #fff;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+    border-radius: .1em;
+    padding: 10px 20px;
+    margin: 20px 400px 0 0; }
+    .message article .wrap .right {
+      float: right; }
